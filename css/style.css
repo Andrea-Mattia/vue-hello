@@ -8,3 +8,71 @@
 body {
     font-family: sans-serif;
 }
+
+/* UTILITIES */
+.df {
+    display: flex;
+}
+
+.fd-col {
+    flex-direction: column;
+}
+
+.op-0 {
+    opacity: 0;
+}
+
+.active {
+    opacity: 1;
+}
+
+.btn {
+    width: 200px;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.btn:hover {
+    transform: scale(1.14);
+    font-size: 16px;
+    color: #333;
+    background: #abd1c6;
+}
+
+/* APP */
+#app {
+    justify-content: space-evenly;
+    align-items: center;
+    min-height: 100vh;
+    background-image: linear-gradient(45deg, #0769AD,#41B883);
+}
+
+/* HEADER */
+header {
+    align-items: center;
+}
+
+header h1 {
+    margin: 0 20px;
+}
+
+header img:first-child {
+    height: 30px;
+}
+
+header img:last-child {
+    width: 60px;
+}
+
+/* SECTION */
+section {
+    align-items: center;
+}
+
+section img {
+    transition: opacity .3s;
+}

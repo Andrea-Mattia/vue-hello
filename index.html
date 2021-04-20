@@ -12,13 +12,20 @@
 </head>
 <body>
     
-    <div id="app">
-        <header>
-            <h1>{{ title }}</h1>
+    <div id="app" class="df fd-col">
+        <header class="df">
+
+            <img :src="imgJquery" :alt="titleOne">
+            <h1>{{ titleOne }} or {{ titleTwo }}?</h1>
+            <img :src="imgVue" :alt="titleTwo">
+
         </header>
 
-        <section>
-            <img :src="image" :alt="title">
+        <section class="df fd-col">
+
+            <button class="btn" @click="active">{{ btnTxt }}</button>
+
+            <img :src="imageBoth" :alt="titleThree" :class="opacityClass">
         </section>
 
     </div>

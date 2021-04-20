@@ -10,7 +10,19 @@
 const app = new Vue({
     el: '#app',
     data: {
-        title: 'Hello Vue! (text inserted by Vue)',
-        image: 'https://picsum.photos/id/1002/500/300',
+        opacityClass: 'op-0',
+        titleOne: 'jQuery',
+        titleTwo: 'Vue',
+        titleThree: 'both-gif',
+        btnTxt: 'Click me to discover!',
+        imgJquery: 'https://upload.wikimedia.org/wikipedia/commons/f/fd/JQuery-Logo.svg',
+        imgVue: 'https://upload.wikimedia.org/wikipedia/commons/9/95/Vue.js_Logo_2.svg',
+        imageBoth: 'https://media.giphy.com/media/3o7aCRloybJlXpNjSU/giphy.gif',
+    },
+    methods: {
+        active() {
+            this.opacityClass = (this.opacityClass === 'op-0') ? 'active' : 'op-0';
+            this.btnTxt = (this.btnTxt === 'Click me to discover!') ? 'BOTH!' : 'Click me to discover!';
+        }
     }
 });
